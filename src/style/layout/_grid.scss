@@ -1,0 +1,22 @@
+.main {
+  display: grid ;
+  grid-template-columns: 1.5fr 3fr 1.8fr ;
+
+  .sidebar {
+    background-color: rgb(181, 100, 100);
+  }
+
+  .feed {
+    background-color: rgb(136, 136, 255);
+  }
+
+  .topics {
+    background-color: rgb(255, 255, 121);
+  }
+}
+
+.main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline:map-get($size, "s-24" ) ;
+}

@@ -1,0 +1,19 @@
+@import '../config/mixins';
+
+
+.lg-tweet {
+  @include clear-button;
+  background-color: map-get($color, "blue" );
+  padding-block: map-get($size, "s-16" );
+  padding-inline: map-get($size, "s-82" );
+  border-radius: map-get($size, "s-32" );
+  color: map-get($color, "light" );
+  font-weight: bold;
+  font-size: map-get($size, "s-16" );
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+
+}

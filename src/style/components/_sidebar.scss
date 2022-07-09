@@ -1,0 +1,104 @@
+.sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    padding: map-get($size, "s-12" );
+    cursor: pointer; 
+    width: map-get($size, "s-28" );
+
+
+    &:hover {
+      background-color: map-get($color, "hover" );
+      border-radius: 50%;
+
+    }
+  }
+
+  &-options {
+    display: flex;
+    align-items: center;
+    padding: map-get($size, "s-12" );
+    cursor: pointer;
+    width: max-content;
+  
+    img {
+      width: map-get($size, "s-28" );
+      height: auto;
+    }
+  
+    p {
+      margin-left: map-get($size, "s-16" );
+      font-size: map-get($size, "s-20" );
+      color:map-get($color, "text" );
+      display: block;
+      font-weight: 500;
+      padding-right: map-get($size, "s-12" );
+    }
+  
+    &:hover {
+      background-color: map-get($color, "hover" );
+      border-radius: map-get($size, "s-52" );
+    }
+  }
+
+  .lg-tweet {
+    margin-top: map-get($size, "s-8" );
+  }
+
+
+  &-bottom {
+    background-color: aqua;
+    padding: map-get($size, "s-12" );
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .profile {
+        width: map-get($size, "s-44" );
+        height: map-get($size, "s-44" );
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  
+      .text {
+        margin-left: map-get($size, "s-12" );
+        h3 {
+          color: map-get($color, "light" );
+          font-size: map-get($size, "s-16" );
+          margin-bottom: map-get($size, "s-4" );
+        }
+  
+        p {
+          color: map-get($color, "gray" );
+          font-size: map-get($size, "s-14" );
+  
+        }
+  
+       
+      }
+    }
+
+    .right {
+      img {
+        width: map-get($size, "s-18" );
+        cursor: pointer;
+      }
+    }
+    
+    &:hover {
+      background-color: map-get($color, "hover" );
+      border-radius: map-get($size, "s-32" );
+    }
+  }
+
+}
+
