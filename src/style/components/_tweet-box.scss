@@ -1,0 +1,78 @@
+.tweet-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid map-get($color,"border" );
+  margin-top: map-get($size, "s-12" );
+
+  .left {
+    .profile2 {
+      width: map-get($size, "s-48" );
+      height: map-get($size, "s-48" );
+      object-fit: cover;
+      border-radius: 50%;
+      margin-left: map-get($size, "s-16" );
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-inline: map-get($size, "s-16" );
+    margin-top: map-get($size, "s-12" );
+
+    .top {
+      textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: map-get($color, "text" );
+        font-size: map-get($size, "s-20" );
+        border-bottom: 1px solid map-get($color,"border" );
+        resize: none;
+
+        &::placeholder {
+          color: map-get($color, "gray" );
+          font-size: map-get($size, "s-20" );
+          font-weight: 300;
+        }
+      }
+    }
+
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      margin-top: map-get($size, "s-8" );
+      margin-bottom: map-get($size, "s-12" );
+
+
+      .left2 { 
+
+        img {
+          cursor: pointer;
+          margin-inline: map-get($size, "s-4" );
+          padding: map-get($size, "s-4" );
+          width: map-get($size, "s-20" );
+
+          &:hover {
+            background-color: rgba(20, 126, 255, 0.2);
+            border-radius: 50%;
+            
+          }
+        }
+
+        #fi {
+          margin-left: 0 !important;
+        }
+      }
+
+      .right2 {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
