@@ -1,20 +1,9 @@
 .main {
   display: grid ;
-  grid-template-columns: 2.5fr 5.5fr 4fr ;
-
-  .sidebar {
-    background-color: rgb(181, 100, 100);
-  }
+  grid-template-columns: 2.5fr 6fr 3.5fr ;
 
   .feed {
-    background-color: rgb(210, 255, 180);
     border-inline: 1px solid map-get($color, "border" );
-
-  }
-
-  .topics {
-    background-color: rgb(255, 255, 121);
-    
   }
 }
 

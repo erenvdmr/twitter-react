@@ -50,7 +50,6 @@
 
 
       .left2 { 
-
         img {
           cursor: pointer;
           margin-inline: map-get($size, "s-4" );
@@ -59,7 +58,7 @@
 
           &:hover {
             background-color: rgba(20, 126, 255, 0.2);
-            border-radius: 50%;
+            border-radius: 30%;
             
           }
         }

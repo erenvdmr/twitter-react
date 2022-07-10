@@ -1,0 +1,73 @@
+.follow {
+  background-color: map-get($color,"trend" );
+  margin-left: map-get($size, "s-32" );
+  border-radius: map-get($size,"s-20" );
+  margin-top: map-get($size, "s-16" );
+
+ .title h2 {
+    color: map-get($color, "text" );
+    font-size:map-get($size, "s-20" );
+    padding-left: map-get($size, "s-16" );
+    padding-top: map-get($size, "s-12" );
+    margin-bottom: map-get($size,"s-12" );
+  }
+
+  .content {
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: map-get($size, "s-12" );
+      padding-inline: map-get($size, "s-16" );
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2a2d32;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        img {
+          width:map-get($size, "s-48" );
+          height:map-get($size, "s-48" );
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .mid {
+          display: flex;
+          flex-direction: column;
+          margin-left: map-get($size, "s-12" );
+          
+          h4 {
+            color: map-get($color,"light" );
+            margin-bottom: map-get($size, "s-2" );
+          }
+
+          p {
+            color: map-get($color,"gray" );
+            font-size: map-get($size, "s-14" );
+          }
+        }
+      }  
+    }
+  }
+
+  .show-more {
+    border-bottom-left-radius: map-get($size,"s-20" );
+    border-bottom-right-radius: map-get($size,"s-20" );
+    cursor: pointer;
+    
+    p {
+      margin-left: map-get($size,"s-16" );
+      color: map-get($color, "blue" );
+      padding-block: map-get($size, "s-16" );      
+    }
+
+    &:hover {
+      background-color: #2a2d32;
+     } 
+  }
+}

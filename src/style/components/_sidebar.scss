@@ -13,7 +13,7 @@
 
     &:hover {
       background-color: map-get($color, "hover" );
-      border-radius: 50%;
+      border-radius: 40%;
     }
   }
 
@@ -49,13 +49,14 @@
   }
 
   &-bottom {
-    background-color: aqua;
     padding: map-get($size, "s-12" );
     justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    margin-bottom: map-get($size, "s-12" );
+    margin-right: map-get($size, "s-12" );
 
     .left {
       display: flex;

@@ -27,3 +27,13 @@
   font-size: map-get($size, "s-16" );
   width: map-get($size, "s-84" );
 }
+
+.follow-button {
+  @include clear-button;
+  background-color: map-get($color,"light" );
+  padding-block: map-get($size, "s-12" );
+  padding-inline: map-get($size, "s-24" );
+  font-size: map-get($size, "s-14" );
+  font-weight: bold;
+  border-radius: map-get($size,"s-24" );
+}
