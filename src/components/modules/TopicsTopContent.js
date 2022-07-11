@@ -1,5 +1,5 @@
 import React from "react";
-import More from "../assets/icons/More-2.svg";
+import More from "../../assets/icons/More-2.svg";
 
 export default function TopicsTopContent({ title, tag, number }) {
   return (

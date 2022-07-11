@@ -1,10 +1,10 @@
 import React from "react";
-import ProfilePhoto from "../assets/photos/profile.jpeg";
-import Galery from "../assets/icons/Media.svg";
-import GIF from "../assets/icons/Gif.svg";
-import Poll from "../assets/icons/Poll.svg";
-import Emoji from "../assets/icons/Emoji.svg";
-import Schedule from "../assets/icons/Schedule.svg";
+import ProfilePhoto from "../../assets/photos/profile.jpeg";
+import Galery from "../../assets/icons/Media.svg";
+import GIF from "../../assets/icons/Gif.svg";
+import Poll from "../../assets/icons/Poll.svg";
+import Emoji from "../../assets/icons/Emoji.svg";
+import Schedule from "../../assets/icons/Schedule.svg";
 
 export default function TweetBox() {
   return (

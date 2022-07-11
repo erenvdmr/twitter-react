@@ -1,14 +1,18 @@
 .main {
   display: grid ;
   grid-template-columns: 2.5fr 6fr 3.5fr ;
-
-  .feed {
-    border-inline: 1px solid map-get($color, "border" );
-  }
-}
-
-.main {
   max-width: 1240px;
   margin: 0 auto;
   padding-inline:map-get($size, "s-24" ) ;
+
+  .sidebar {
+    border-right: 1px solid map-get($color, "border" );
+  }
+
+  .topics {
+    border-left: 1px solid map-get($color, "border" );
+
+  }
+
 }
+

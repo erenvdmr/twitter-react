@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Header";
-import TweetBox from "./TweetBox";
-import Post from "./Post";
+import Header from "../../modules/Header";
+import TweetBox from "../../modules/TweetBox";
+import Post from "../../modules/Post";
 
 export default function Feed() {
   return (

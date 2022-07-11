@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../assets/icons/Timeline-Prop.svg";
+import Star from "../../assets/icons/Timeline-Prop.svg";
 
 export default function Header() {
   return (

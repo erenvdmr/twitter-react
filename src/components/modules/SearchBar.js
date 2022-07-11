@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../assets/icons/Search.svg";
+import Search from "../../assets/icons/Search.svg";
 
 export default function SearchBar() {
   return (

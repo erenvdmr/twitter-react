@@ -1,6 +1,6 @@
 import React from "react";
-import ProfilePhoto from "../assets/photos/profile.jpeg";
-import More from "../assets/icons/More-2.svg";
+import ProfilePhoto from "../../assets/photos/profile.jpeg";
+import More from "../../assets/icons/More-2.svg";
 
 export default function SideBottom() {
   return (

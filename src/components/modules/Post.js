@@ -1,11 +1,11 @@
 import React from "react";
-import Avatar from "../assets/photos/figma.png";
-import More from "../assets/icons/More-2.svg";
-import Retweet from "../assets/icons/Retweet.svg";
-import Reply from "../assets/icons/Reply.svg";
-import Like from "../assets/icons/React.svg";
-import Share from "../assets/icons/Share.svg";
-import PostPhoto from "../assets/photos/post.jpeg";
+import Avatar from "../../assets/photos/figma.png";
+import More from "../../assets/icons/More-2.svg";
+import Retweet from "../../assets/icons/Retweet.svg";
+import Reply from "../../assets/icons/Reply.svg";
+import Like from "../../assets/icons/React.svg";
+import Share from "../../assets/icons/Share.svg";
+import PostPhoto from "../../assets/photos/post.jpeg";
 
 export default function Post({ name, username, text, image, avatar }) {
   return (

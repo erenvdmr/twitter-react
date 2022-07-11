@@ -3,9 +3,9 @@ import FollowContent from "./FollowContent";
 
 //
 
-import Apple from "../assets/photos/apple.webp";
-import Google from "../assets/photos/google.webp";
-import Framer from "../assets/photos/framer.png";
+import Apple from "../../assets/photos/apple.jpg";
+import Google from "../../assets/photos/google.webp";
+import Framer from "../../assets/photos/framer.png";
 
 export default function Follow() {
   return (

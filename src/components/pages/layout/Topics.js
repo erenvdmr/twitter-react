@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import TopicsTop from "./TopicsTop";
-import Follow from "./Follow";
+import SearchBar from "../../modules/SearchBar";
+import TopicsTop from "../../modules/TopicsTop";
+import Follow from "../../modules/Follow";
 
 export default function Topics() {
   return (
