@@ -1,0 +1,16 @@
+.overlay {
+
+  .tweet-modal {
+    background-color: map-get($color,"dark" );
+    width: 600px;
+    height: 230px;
+    border-radius: map-get($size, "s-20" );
+    position: absolute !important;
+    border: 1px solid map-get($color,  "blue" );
+    z-index: 100;
+    .close {
+      padding: map-get($size, "s-12" );
+      cursor: pointer;
+    } 
+  }
+}

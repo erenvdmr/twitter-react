@@ -6,9 +6,9 @@
   padding-inline: map-get($size, "s-16" );
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 2;
   background-color: rgba(0,0,0, 0.4);
-  backdrop-filter: blur(4px) saturate(70%);
+  backdrop-filter: blur(map-get($size,"s-4")) saturate(70%);
 
   h3 {
     color: map-get($color, "text" );

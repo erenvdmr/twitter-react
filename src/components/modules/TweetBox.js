@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfilePhoto from "../../assets/photos/profile.jpeg";
 import Galery from "../../assets/icons/Media.svg";
 import GIF from "../../assets/icons/Gif.svg";
@@ -7,6 +7,16 @@ import Emoji from "../../assets/icons/Emoji.svg";
 import Schedule from "../../assets/icons/Schedule.svg";
 
 export default function TweetBox() {
+  const [dis, setDis] = useState(true);
+
+  const handleChange = (e) => {
+    if (e.target.value.length > 0) {
+      setDis(false);
+    } else {
+      setDis(true);
+    }
+  };
+
   return (
     <div className="tweet-box">
       <div className="left">
@@ -14,7 +24,11 @@ export default function TweetBox() {
       </div>
       <div className="right">
         <div className="top">
-          <textarea rows={3} placeholder="What's happening?"></textarea>
+          <textarea
+            rows={3}
+            placeholder="What's happening?"
+            onChange={handleChange}
+          ></textarea>
         </div>
         <div className="bottom">
           <div className="left2">
@@ -25,7 +39,9 @@ export default function TweetBox() {
             <img src={Schedule} alt="" />
           </div>
           <div className="right2">
-            <button className="sm-tweet">Tweet</button>
+            <button disabled={dis} className="sm-tweet">
+              Tweet
+            </button>
           </div>
         </div>
       </div>

@@ -85,6 +85,7 @@
 
   .right {
     position: relative;
+    z-index: -1;
     img {
       position: absolute;
       right: map-get($size, "s-4" );

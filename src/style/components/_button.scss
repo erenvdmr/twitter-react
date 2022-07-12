@@ -18,6 +18,7 @@
 }
 
 .sm-tweet {
+
   @include clear-button;
   background-color: map-get($color, "blue" );
   padding-block: map-get($size, "s-8" );
@@ -26,6 +27,11 @@
   border-radius: map-get($size, "s-32" );
   font-size: map-get($size, "s-16" );
   width: map-get($size, "s-84" );
+
+  &:disabled {
+    opacity: 0.6;
+    cursor:auto ;
+  }
 }
 
 .follow-button {

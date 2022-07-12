@@ -36,7 +36,6 @@
         &::placeholder {
           color: map-get($color, "gray" );
           font-size: map-get($size, "s-20" );
-          font-weight: 300;
         }
       }
     }

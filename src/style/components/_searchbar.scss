@@ -1,12 +1,14 @@
 .search {
   background-color: map-get($color, "dark" );
-  padding-block:map-get($size, "s-4" );
+  padding-block:3px;
   position: sticky;
   top: 0;
+  z-index: 0;
 }
 
 .searchbar {
   background-color: map-get($color, "trend" ); 
+  border: 1px solid map-get($color, "trend" );
   margin-block: map-get($size,"s-4" );
   margin-left: map-get($size,"s-32" );
   padding-inline: map-get($size ,"s-16" );
@@ -14,7 +16,16 @@
   border-radius: map-get($size, "s-32" );
   display: flex;
   align-items: center;
+  transition: .2s;
+
+  input {
+    width: 100%;
+  }
   
+  &:hover {
+    border: 1px solid map-get($color, "blue" );
+
+  } 
 
   img {
     width: map-get($size, "s-20" );
