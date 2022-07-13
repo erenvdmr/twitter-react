@@ -5,9 +5,15 @@
   padding-block: map-get($size, "s-12" );
   cursor: pointer;
   border-bottom: 1px solid map-get($color, "border" );
+  justify-content: space-between;
+
+  .start {
+    display: flex;
+  }
 
   .left img {
     width: map-get($size, "s-48" );
+    height: map-get($size, "s-48" );
     border-radius: 50%;
     object-fit: cover;
   }
@@ -42,14 +48,7 @@
       }
     }
 
-    .image {
-      margin-top: map-get($size,"s-12" );
-      
-      img {
-        width: 100%;
-        border-radius: map-get($size,"s-24" );
-      }
-    }
+
 
     .tools {
       display: flex;
@@ -84,11 +83,7 @@
   }
 
   .right {
-    position: relative;
     z-index: -1;
-    img {
-      position: absolute;
-      right: map-get($size, "s-4" );
-    }
+ 
   }
 }
