@@ -37,9 +37,9 @@ export default function Feed() {
             username={"erenvdmr"}
             image=""
             avatar={ProfilePhoto}
-            retweet="0"
-            reply="0"
-            like="0"
+            retweet=""
+            reply=""
+            like=""
           />
         ))}
 
@@ -49,9 +49,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="0"
-        reply="0"
-        like="0"
+        retweet=""
+        reply=""
+        like=""
       />
 
       <Post
@@ -60,9 +60,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="1"
-        reply="1"
-        like="8"
+        retweet=""
+        reply=""
+        like=""
       />
 
       <Post
@@ -71,9 +71,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="1"
-        reply="1"
-        like="8"
+        retweet=""
+        reply=""
+        like=""
       />
 
       <Post
@@ -82,9 +82,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="1"
-        reply="1"
-        like="8"
+        retweet=""
+        reply=""
+        like=""
       />
 
       <Post
@@ -93,9 +93,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="0"
-        reply="0"
-        like="2"
+        retweet=""
+        reply=""
+        like=""
       />
 
       <Post
@@ -104,9 +104,9 @@ export default function Feed() {
         username={"erenvdmr"}
         image=""
         avatar={ProfilePhoto}
-        retweet="0"
-        reply="2"
-        like="10"
+        retweet=""
+        reply=""
+        like=""
       />
     </div>
   );
