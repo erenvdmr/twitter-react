@@ -1,5 +1,7 @@
-.profile {
+.link-page {
   p {
-    color: red;
+    color: map-get($color, "light" );
+    font-size: map-get($size,"s-48" );
   }
+
 }

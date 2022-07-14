@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import SideBarOptions from "../../modules/SideBarOptions";
 import SideBarBottom from "../../modules/SideBarBottom";
-import TweetModal from "../../modules/TweetModal";
 
 import Logo from "../../../assets/icons/Twitter.svg";
 import Home from "../../../assets/icons/Home.svg";
@@ -17,15 +16,6 @@ import More from "../../../assets/icons/More.svg";
 import Tweet2 from "../../../assets/icons/Tweet2.svg";
 
 export default function SideBar() {
-  const [modalShow, setModalShow] = useState(false);
-
-  const openModal = () => {
-    setModalShow(true);
-  };
-
-  const closeModal = () => {
-    setModalShow(false);
-  };
   return (
     <div className="sidebar">
       <div className="top">
@@ -63,16 +53,12 @@ export default function SideBar() {
           <SideBarOptions icon={More} text={"More"} className="moree" />
         </Link>
 
-        <button className="lg-tweet" onClick={openModal}>
-          Tweetle
-        </button>
+        <button className="lg-tweet">Tweetle</button>
 
         <button className="md-tweet">
           <img src={Tweet2} alt="" />
         </button>
       </div>
-
-      <TweetModal open={modalShow} close={closeModal} />
 
       {/* Bottom */}
       <div className="bottom">
