@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+
+import TweetMore from "./TweetMore";
+
 import More from "../../assets/icons/More-2.svg";
 import Retweet from "../../assets/icons/Retweet.svg";
 import Reply from "../../assets/icons/Reply.svg";
@@ -14,6 +17,12 @@ export default function Post({
   reply,
   like,
 }) {
+  const [more, setMore] = useState(false);
+
+  const moreClick = () => {
+    setMore(true);
+  };
+
   return (
     <div className="post">
       <div className="start">
@@ -52,9 +61,11 @@ export default function Post({
         </div>
       </div>
 
-      <div className="right">
+      <div className="right" onClick={moreClick}>
         <img src={More} alt="" />
       </div>
+
+      {more && <TweetMore />}
     </div>
   );
 }

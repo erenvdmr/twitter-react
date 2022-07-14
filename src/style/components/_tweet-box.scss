@@ -74,3 +74,28 @@
     }
   }
 }
+
+
+.tweet-more {
+  display: flex;
+  align-items: center;
+  background-color: map-get($color, "dark" );
+  box-shadow: 0px 0px 10px 1px rgb(81, 81, 81);
+  padding: map-get($size, "s-16" );
+  border-radius: map-get($size, "s-12" );
+  img {
+    width: map-get($size, "s-16" );
+    height: map-get($size, "s-16" );
+  } 
+  p {
+    color: map-get($color, "text" );
+    margin-left: map-get($size,"s-8");
+    font-size: map-get($size, "s-14" );
+  }
+
+  &:hover {
+    background-color: map-get($color, "hover" );
+  }
+
+
+}

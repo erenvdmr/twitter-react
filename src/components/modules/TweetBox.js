@@ -23,9 +23,11 @@ export default function TweetBox({ input, setInput, tweets, setTweets }) {
     e.preventDefault();
     setTweets([...tweets, { text: input }]);
     setInput("");
+
+    handleChange(e);
   };
 
-  console.log(input);
+  console.log(tweets);
 
   return (
     <div className="tweet-box">

@@ -43,3 +43,16 @@
   font-weight: bold;
   border-radius: map-get($size,"s-24" );
 }
+
+.md-tweet {
+  @include clear-button;
+  background-color: map-get($color, "blue" );
+  padding-block: map-get($size, "s-8" );
+  color: map-get($color, "light" );
+  border-radius: 50%;
+  width: map-get($size,"s-48" );
+  height: map-get($size,"s-48" );
+  display: flex;
+  align-items: center;
+
+}

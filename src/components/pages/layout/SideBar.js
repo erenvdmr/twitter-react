@@ -14,6 +14,7 @@ import Bookmarks from "../../../assets/icons/Bookmarks.svg";
 import Lists from "../../../assets/icons/Lists.svg";
 import Profile from "../../../assets/icons/Profile.svg";
 import More from "../../../assets/icons/More.svg";
+import Tweet2 from "../../../assets/icons/Tweet2.svg";
 
 export default function SideBar() {
   const [modalShow, setModalShow] = useState(false);
@@ -58,9 +59,16 @@ export default function SideBar() {
           <SideBarOptions icon={Profile} text={"Profile"} />
         </Link>
 
-        <SideBarOptions icon={More} text={"More"} />
+        <Link to="/more">
+          <SideBarOptions icon={More} text={"More"} className="moree" />
+        </Link>
+
         <button className="lg-tweet" onClick={openModal}>
           Tweetle
+        </button>
+
+        <button className="md-tweet">
+          <img src={Tweet2} alt="" />
         </button>
       </div>
 

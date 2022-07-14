@@ -1,0 +1,114 @@
+@media (min-width:1100px)  {
+  .md-tweet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .main {
+    grid-template-columns: 1fr 7.5fr 3.5fr ;
+  }
+
+  .sidebar {
+    padding-right: map-get($size, "s-12" );
+  }
+
+  .sidebar-options {
+    p {
+      display: none !important ;
+    }
+  }
+
+  .sidebar-bottom {
+    padding: 0;
+    margin: 0;
+
+    .text, .right {
+      display: none;
+    }
+  }
+
+  .lg-tweet {
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width: 876px) {
+  .main {
+    grid-template-columns: 1fr 11fr 0fr ;
+
+  }
+  .feed {
+    border-right: 1px solid map-get($color, "border" );
+  }
+  .topics {
+    display: none;
+  }
+
+}
+
+@media (max-width: 468px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: hidden; 
+
+
+  }
+
+  .tweet-box {
+    flex-direction: column;
+
+    .right {
+      margin: 0;
+    }
+  }
+
+  .feed {
+    border: none;
+
+    .post {
+
+      .mid {
+        .tools {
+          div:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    border-top: 1px solid map-get($color, "border" );
+    border-right: none !important;
+    background-color: map-get($color,"dark" );
+    padding-block: map-get($size, "s-12" );
+    height: max-content;
+    width: 100%;
+    z-index: 12;
+
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+     .logo, a:nth-child(6), a:nth-child(7), 
+      a:nth-child(8),a:nth-child(9), a:nth-child(10)
+       {
+        display: none;
+      }
+    }
+
+    .bottom {
+      display: none;
+    }
+  }
+  
+
+}

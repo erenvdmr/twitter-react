@@ -37,28 +37,76 @@ export default function Feed() {
             username={"erenvdmr"}
             image=""
             avatar={ProfilePhoto}
+            retweet="0"
+            reply="0"
+            like="0"
           />
         ))}
 
       <Post
+        text={"hello world"}
         name={"Eren Demir"}
         username={"erenvdmr"}
-        text={"code, design"}
+        image=""
         avatar={ProfilePhoto}
-        reply="2"
-        like="17"
-        retweet="1"
+        retweet="0"
+        reply="0"
+        like="0"
       />
 
       <Post
-        name={"Figma"}
-        username={"figma"}
-        text={"Design is our life 🎨"}
-        image={PostPhoto}
-        avatar={Avatar}
-        reply="2"
-        like="17"
+        text={"deisgn, code"}
+        name={"Eren Demir"}
+        username={"erenvdmr"}
+        image=""
+        avatar={ProfilePhoto}
         retweet="1"
+        reply="1"
+        like="8"
+      />
+
+      <Post
+        text={"deisgn, code"}
+        name={"Eren Demir"}
+        username={"erenvdmr"}
+        image=""
+        avatar={ProfilePhoto}
+        retweet="1"
+        reply="1"
+        like="8"
+      />
+
+      <Post
+        text={"deisgn, code"}
+        name={"Eren Demir"}
+        username={"erenvdmr"}
+        image=""
+        avatar={ProfilePhoto}
+        retweet="1"
+        reply="1"
+        like="8"
+      />
+
+      <Post
+        text={"I send project to my github profile"}
+        name={"Eren Demir"}
+        username={"erenvdmr"}
+        image=""
+        avatar={ProfilePhoto}
+        retweet="0"
+        reply="0"
+        like="2"
+      />
+
+      <Post
+        text={"hello world"}
+        name={"Eren Demir"}
+        username={"erenvdmr"}
+        image=""
+        avatar={ProfilePhoto}
+        retweet="0"
+        reply="2"
+        like="10"
       />
     </div>
   );
