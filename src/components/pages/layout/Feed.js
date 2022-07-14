@@ -4,9 +4,6 @@ import Header from "../../modules/Header";
 import TweetBox from "../../modules/TweetBox";
 import Post from "../../modules/Post";
 
-import PostPhoto from "../../../assets/photos/post.jpeg";
-import Avatar from "../../../assets/photos/figma.png";
-
 import ProfilePhoto from "../../../assets/photos/profile.jpeg";
 
 export default function Feed() {
